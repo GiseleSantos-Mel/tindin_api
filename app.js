@@ -11,7 +11,12 @@ const port = 3000
 app.use(express.static('www'))
 
 const notes = []
+const products = []
 
+/*--------------PRODUCTS--------------*/
+app.get('/products', (req, res) => {
+  res.json(notes)
+})
 /*----------------GET------------------*/
 app.get('/notes', (req, res) => {
   res.json(notes)
